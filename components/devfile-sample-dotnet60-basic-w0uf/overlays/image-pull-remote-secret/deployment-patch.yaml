@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-dotnet60-basic-w0uf
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - env:
+        - name: var_name
+          value: test
+        image: quay.io/rsoaresd_org/spi-demos-brce-tenant/dotnet-component/devfile-sample-dotnet60-basic-w0uf@sha256:b416d1bed2a6c3102a031ac9b404fd054a13113e790e4b99e5a683a943f28607
+        name: main
+        resources: {}
+status: {}
